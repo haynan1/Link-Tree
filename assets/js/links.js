@@ -46,7 +46,7 @@ const LINK_CONTENT = {
     {
       key: "contato",
       title: "Contato",
-      description: "Canal para conversas, duvidas e contato profissional",
+      description: "Canal para conversas, dúvidas e contato profissional",
       icon: "@"
     }
   ],
