@@ -57,10 +57,10 @@ Exemplo:
 
 ```js
 const LINKS = {
-  github: "https://github.com/haynan1",
   projetos: "./pages/projetos.html",
-  linux: "./pages/linux.html",
-  markdown: "./pages/markdown.html",
+  manualLinux: "https://haynan1.github.io/Manual-Linux/#manual",
+  manualGit: "https://haynan1.github.io/Manual-Git/#content",
+  guiaMarkdown: "https://haynan1.github.io/guia-definitivo-de-markdown/#content",
   grupo: "#",
   contato: "#"
 };

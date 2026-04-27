@@ -1,41 +1,45 @@
 const LINKS = {
-  github: "https://github.com/haynan1",
   projetos: "./pages/projetos.html",
-  linux: "./pages/linux.html",
-  markdown: "./pages/markdown.html",
+  manualLinux: "https://haynan1.github.io/Manual-Linux/#manual",
+  manualGit: "https://haynan1.github.io/Manual-Git/#content",
+  guiaMarkdown: "https://haynan1.github.io/guia-definitivo-de-markdown/#content",
+  jamesGpt: "https://chatgpt.com/g/g-699c4a954f888191beb54b23f954fe75-james",
   grupo: "#",
   contato: "#",
-  home: "../index.html",
-  linuxDocs: "https://www.kernel.org/doc/html/latest/",
-  markdownGuide: "https://www.markdownguide.org/",
   portfolioGithub: "https://github.com/haynan1?tab=repositories"
 };
 
 const LINK_CONTENT = {
   home: [
     {
-      key: "github",
-      title: "GitHub",
-      description: "Repositórios, estudos e código aberto",
-      icon: "GH"
+      key: "manualLinux",
+      title: "Manual Linux",
+      description: "Comandos, fundamentos e prática no terminal",
+      icon: "LX"
+    },
+    {
+      key: "manualGit",
+      title: "Manual de Git",
+      description: "Versionamento, comandos e fluxo de trabalho",
+      icon: "GT"
+    },
+    {
+      key: "guiaMarkdown",
+      title: "Guia de Markdown",
+      description: "Escrita técnica, README e documentação",
+      icon: "MD"
+    },
+    {
+      key: "jamesGpt",
+      title: "James",
+      description: "GPT personalizado para estudo de programação",
+      icon: "AI"
     },
     {
       key: "projetos",
       title: "Projetos",
       description: "Portfólio técnico e experimentos",
       icon: "PR"
-    },
-    {
-      key: "linux",
-      title: "Linux",
-      description: "Comandos, guias e ambiente de desenvolvimento",
-      icon: "LX"
-    },
-    {
-      key: "markdown",
-      title: "Markdown",
-      description: "Notas, documentação e escrita técnica",
-      icon: "MD"
     },
     {
       key: "grupo",
@@ -52,30 +56,18 @@ const LINK_CONTENT = {
   ],
   linux: [
     {
-      key: "linuxDocs",
-      title: "Documentação do Kernel",
-      description: "Referência oficial para aprofundar estudos em Linux",
+      key: "manualLinux",
+      title: "Manual Linux",
+      description: "Material publicado com comandos, fundamentos e prática",
       icon: "LX"
-    },
-    {
-      key: "github",
-      title: "Repositórios no GitHub",
-      description: "Scripts, anotações e projetos relacionados",
-      icon: "GH"
     }
   ],
   markdown: [
     {
-      key: "markdownGuide",
-      title: "Markdown Guide",
-      description: "Sintaxe essencial para documentação clara",
+      key: "guiaMarkdown",
+      title: "Guia definitivo de Markdown",
+      description: "Material publicado para escrita técnica e documentação",
       icon: "MD"
-    },
-    {
-      key: "github",
-      title: "GitHub",
-      description: "README, docs e exemplos práticos",
-      icon: "GH"
     }
   ],
   projetos: [
@@ -84,12 +76,6 @@ const LINK_CONTENT = {
       title: "Ver repositórios",
       description: "Projetos publicados e estudos em andamento",
       icon: "PR"
-    },
-    {
-      key: "contato",
-      title: "Entrar em contato",
-      description: "Canal para conversar sobre projetos e ideias",
-      icon: "@"
     }
   ]
 };
