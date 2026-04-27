@@ -86,7 +86,7 @@ Ela registra:
 - origem simples via `document.referrer`;
 - evento para Google Analytics, se `gtag` estiver disponivel.
 
-Na primeira versao, os eventos aparecem no console do navegador. No futuro, a mesma funcao pode enviar dados para uma API propria.
+Na primeira versao, os eventos aparecem no console do navegador. Depois, a mesma funcao pode ser conectada a um endpoint proprio.
 
 ## Google Analytics
 
@@ -126,30 +126,27 @@ https://seu-usuario.github.io/link-hub/
 
 O GitHub Pages oferece HTTPS automaticamente em dominios `github.io`. Futuramente tambem e possivel configurar um dominio proprio.
 
-## Monetizacao futura
+## Conteudo em desenvolvimento
 
-Pontos preparados para evolucao:
+Pontos preparados para evolucao do hub publico:
 
-- links de afiliado;
-- produtos digitais;
 - comunidade WhatsApp ou Telegram;
-- pagina de captura de leads;
-- botao de contato comercial;
-- consultoria ou servicos;
+- canais de contato;
+- materiais de estudo;
+- projetos publicados;
+- referencias tecnicas;
 - dashboard de cliques;
-- API propria para analytics.
+- endpoint proprio para analytics.
 
-Pagamentos nao foram implementados nesta versao para manter o projeto totalmente estatico e compativel com GitHub Pages.
+O projeto segue totalmente estatico e compativel com GitHub Pages.
 
 ## Evolucao com backend Flask
 
 Quando o projeto precisar de recursos dinamicos, uma API Flask pode ser criada separadamente para:
 
 - registrar cliques em banco de dados;
-- salvar leads de formularios;
 - administrar links por painel;
 - criar dashboard de acessos;
-- integrar pagamentos;
 - gerar links rastreaveis;
 - proteger rotas administrativas.
 
@@ -160,7 +157,7 @@ frontend estatico no GitHub Pages
         ↓
 API Flask hospedada em outro servico
         ↓
-banco de dados para cliques, leads e configuracoes
+banco de dados para cliques, conteudos e configuracoes
 ```
 
 O frontend atual ja deixa um ponto natural para essa integracao dentro da funcao `trackClick`.

@@ -21,6 +21,14 @@ function resolveLink(linkName) {
   return url;
 }
 
+function isExternalLink(url) {
+  return /^https?:\/\//.test(url);
+}
+
+function isDesktop() {
+  return window.matchMedia("(min-width: 768px)").matches;
+}
+
 function trackClick(linkName) {
   const targetUrl = resolveLink(linkName);
   const data = {
@@ -41,16 +49,30 @@ function trackClick(linkName) {
     });
   }
 
-  // Futuro: enviar este evento para uma API propria quando houver backend.
-  window.open(targetUrl, "_blank", "noopener,noreferrer");
+  // Futuro: integrar este evento a um endpoint quando houver backend.
+  if (targetUrl === "#") {
+    return;
+  }
+
+  if (isExternalLink(targetUrl) && isDesktop()) {
+    window.open(targetUrl, "_blank", "noopener,noreferrer");
+    return;
+  }
+
+  window.location.href = targetUrl;
 }
 
 function createLinkButton(item) {
   const button = document.createElement("a");
+  const targetUrl = resolveLink(item.key);
   button.className = "link-button";
-  button.href = resolveLink(item.key);
-  button.target = "_blank";
-  button.rel = "noopener noreferrer";
+  button.href = targetUrl;
+
+  if (isExternalLink(targetUrl) && isDesktop()) {
+    button.target = "_blank";
+    button.rel = "noopener noreferrer";
+  }
+
   button.dataset.link = item.key;
   button.innerHTML = `
     <span class="link-icon" aria-hidden="true">${item.icon}</span>

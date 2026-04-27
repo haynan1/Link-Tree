@@ -40,13 +40,13 @@ const LINK_CONTENT = {
     {
       key: "grupo",
       title: "Grupo/Comunidade",
-      description: "Espaco futuro para WhatsApp ou Telegram",
+      description: "Canal para acompanhar novidades e trocar ideias",
       icon: "CM"
     },
     {
       key: "contato",
       title: "Contato",
-      description: "Canal profissional para propostas e parcerias",
+      description: "Canal para conversas, duvidas e contato profissional",
       icon: "@"
     }
   ],
@@ -87,8 +87,8 @@ const LINK_CONTENT = {
     },
     {
       key: "contato",
-      title: "Solicitar parceria",
-      description: "Espaco reservado para contato comercial futuro",
+      title: "Entrar em contato",
+      description: "Canal para conversar sobre projetos e ideias",
       icon: "@"
     }
   ]
