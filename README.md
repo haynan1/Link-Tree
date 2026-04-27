@@ -158,4 +158,8 @@ O frontend atual já deixa um ponto natural para essa integração dentro da fun
 
 ## Licença
 
-Use, edite e evolua este projeto livremente para fins pessoais, educacionais ou profissionais.
+Este projeto possui uso restrito e todos os direitos são reservados a Haynan Kerlin.
+
+É proibido copiar, alterar, distribuir, publicar, hospedar, vender, utilizar ou criar obras derivadas deste projeto, total ou parcialmente, sem autorização prévia, expressa e por escrito do titular dos direitos.
+
+Consulte o arquivo [LICENSE](./LICENSE) para a licença completa.
