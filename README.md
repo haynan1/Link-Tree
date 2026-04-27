@@ -15,7 +15,6 @@ link-hub/
 │   │   └── style.css
 │   ├── js/
 │   │   ├── links.js
-│   │   ├── analytics.js
 │   │   └── app.js
 │   └── img/
 │       └── avatar-placeholder.svg
@@ -90,23 +89,18 @@ Na primeira versão, os eventos aparecem no console do navegador. Depois, a mesm
 
 ## Google Analytics
 
-O arquivo abaixo já está preparado para GA4:
+O GA4 já está ativo nas páginas HTML com o ID de medição:
 
 ```text
-assets/js/analytics.js
+G-6BJH4NLQ87
 ```
 
-Ele usa o placeholder:
+A tag oficial do Google foi adicionada dentro do `<head>` em:
 
-```js
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
-```
-
-Para ativar:
-
-1. Crie uma propriedade GA4 no Google Analytics.
-2. Substitua `G-XXXXXXXXXX` pelo seu ID real.
-3. Descomente o bloco de carregamento do Google Analytics no arquivo `analytics.js`.
+- `index.html`;
+- `pages/linux.html`;
+- `pages/markdown.html`;
+- `pages/projetos.html`.
 
 ## Como publicar no GitHub Pages
 
