@@ -1,0 +1,7 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="120" fill="#111827"/>
+  <circle cx="120" cy="92" r="44" fill="#2DD4BF"/>
+  <path d="M52 203C58.5 164.5 84 145 120 145C156 145 181.5 164.5 188 203" fill="#38BDF8"/>
+  <path d="M74 57L95 36H145L166 57" stroke="#F8FAFC" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="224" text-anchor="middle" fill="#A7B0C0" font-family="Arial, sans-serif" font-size="18" font-weight="700">HK</text>
+</svg>
