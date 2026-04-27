@@ -5,10 +5,10 @@ const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
 
   Como ativar:
   1. Crie uma propriedade GA4 no Google Analytics.
-  2. Troque G-XXXXXXXXXX pelo seu ID real de medicao.
+  2. Troque G-XXXXXXXXXX pelo seu ID real de medição.
   3. Descomente o bloco abaixo.
 
-  Observacao: o projeto funciona normalmente sem Google Analytics.
+  Observação: o projeto funciona normalmente sem Google Analytics.
 */
 
 /*

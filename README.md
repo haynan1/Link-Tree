@@ -1,8 +1,8 @@
 # Link Hub
 
-Link Hub e uma alternativa propria ao Linktree, criada para centralizar links profissionais de Haynan Kerlin em uma pagina estatica, responsiva e pronta para GitHub Pages.
+Link Hub é uma alternativa própria ao Linktree, criada para centralizar links profissionais de Haynan Kerlin em uma página estática, responsiva e pronta para GitHub Pages.
 
-O projeto usa apenas HTML, CSS e JavaScript puro. Nao depende de backend, banco de dados, frameworks ou bibliotecas externas. A primeira versao funciona abrindo o arquivo `index.html` no navegador e tambem quando publicada no GitHub Pages.
+O projeto usa apenas HTML, CSS e JavaScript puro. Não depende de backend, banco de dados, frameworks ou bibliotecas externas. A primeira versão funciona abrindo o arquivo `index.html` no navegador e também quando publicada no GitHub Pages.
 
 ## Estrutura
 
@@ -27,13 +27,13 @@ link-hub/
 
 ## Como rodar localmente
 
-Opcao simples:
+Opção simples:
 
 1. Abra a pasta `link-hub`.
 2. Clique duas vezes em `index.html`.
-3. O site sera aberto diretamente no navegador.
+3. O site será aberto diretamente no navegador.
 
-Opcao com servidor local, caso prefira simular uma publicacao:
+Opção com servidor local, caso prefira simular uma publicação:
 
 ```bash
 python -m http.server 8000
@@ -66,13 +66,13 @@ const LINKS = {
 };
 ```
 
-Troque os valores `#` pelos links reais quando tiver uma comunidade, contato, WhatsApp, Telegram, formulario ou pagina de captura.
+Troque os valores `#` pelos links reais quando tiver uma comunidade, contato, WhatsApp, Telegram, formulário ou outra página pública.
 
-Para editar o texto dos botoes, altere o objeto `LINK_CONTENT` no mesmo arquivo.
+Para editar o texto dos botões, altere o objeto `LINK_CONTENT` no mesmo arquivo.
 
 ## Rastreamento de cliques
 
-A funcao `trackClick(linkName)` esta em:
+A função `trackClick(linkName)` está em:
 
 ```text
 assets/js/app.js
@@ -80,17 +80,17 @@ assets/js/app.js
 
 Ela registra:
 
-- nome do botao clicado;
-- horario do clique;
-- pagina atual;
+- nome do botão clicado;
+- horário do clique;
+- página atual;
 - origem simples via `document.referrer`;
-- evento para Google Analytics, se `gtag` estiver disponivel.
+- evento para Google Analytics, se `gtag` estiver disponível.
 
-Na primeira versao, os eventos aparecem no console do navegador. Depois, a mesma funcao pode ser conectada a um endpoint proprio.
+Na primeira versão, os eventos aparecem no console do navegador. Depois, a mesma função pode ser conectada a um endpoint próprio.
 
 ## Google Analytics
 
-O arquivo abaixo ja esta preparado para GA4:
+O arquivo abaixo já está preparado para GA4:
 
 ```text
 assets/js/analytics.js
@@ -110,58 +110,58 @@ Para ativar:
 
 ## Como publicar no GitHub Pages
 
-1. Crie um repositorio no GitHub chamado `link-hub`.
-2. Envie todos os arquivos deste projeto para o repositorio.
+1. Crie um repositório no GitHub chamado `link-hub`.
+2. Envie todos os arquivos deste projeto para o repositório.
 3. No GitHub, acesse `Settings`.
 4. Entre em `Pages`.
 5. Em `Build and deployment`, selecione `Deploy from a branch`.
 6. Escolha a branch `main` e a pasta `/root`.
 7. Salve.
 
-O GitHub Pages publicara o site em um endereco parecido com:
+O GitHub Pages publicará o site em um endereço parecido com:
 
 ```text
 https://seu-usuario.github.io/link-hub/
 ```
 
-O GitHub Pages oferece HTTPS automaticamente em dominios `github.io`. Futuramente tambem e possivel configurar um dominio proprio.
+O GitHub Pages oferece HTTPS automaticamente em domínios `github.io`. Futuramente também é possível configurar um domínio próprio.
 
-## Conteudo em desenvolvimento
+## Conteúdo em desenvolvimento
 
-Pontos preparados para evolucao do hub publico:
+Pontos preparados para evolução do hub público:
 
 - comunidade WhatsApp ou Telegram;
 - canais de contato;
 - materiais de estudo;
 - projetos publicados;
-- referencias tecnicas;
+- referências técnicas;
 - dashboard de cliques;
-- endpoint proprio para analytics.
+- endpoint próprio para analytics.
 
-O projeto segue totalmente estatico e compativel com GitHub Pages.
+O projeto segue totalmente estático e compatível com GitHub Pages.
 
-## Evolucao com backend Flask
+## Evolução com backend Flask
 
-Quando o projeto precisar de recursos dinamicos, uma API Flask pode ser criada separadamente para:
+Quando o projeto precisar de recursos dinâmicos, uma API Flask pode ser criada separadamente para:
 
 - registrar cliques em banco de dados;
 - administrar links por painel;
 - criar dashboard de acessos;
-- gerar links rastreaveis;
+- gerar links rastreáveis;
 - proteger rotas administrativas.
 
 Uma arquitetura simples futura:
 
 ```text
-frontend estatico no GitHub Pages
+frontend estático no GitHub Pages
         ↓
-API Flask hospedada em outro servico
+API Flask hospedada em outro serviço
         ↓
-banco de dados para cliques, conteudos e configuracoes
+banco de dados para cliques, conteúdos e configurações
 ```
 
-O frontend atual ja deixa um ponto natural para essa integracao dentro da funcao `trackClick`.
+O frontend atual já deixa um ponto natural para essa integração dentro da função `trackClick`.
 
-## Licenca
+## Licença
 
 Use, edite e evolua este projeto livremente para fins pessoais, educacionais ou profissionais.
